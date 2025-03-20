@@ -4,7 +4,7 @@ import SideBar from "@/components/sidebar";
 export default function Dashboard({ children }) {
   return (
     <>
-      <div className="grid grid-cols-12 bg-gray-100 min-h-screen overflow-hidden">
+      <div className="grid grid-cols-12 bg-gray-100 min-h-screen overflow-hidden overscroll-none">
         <div className="col-span-3">
           <SideBar />
         </div>

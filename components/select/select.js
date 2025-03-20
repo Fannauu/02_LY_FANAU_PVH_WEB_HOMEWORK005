@@ -19,7 +19,7 @@ export default function SelectList(categories) {
 
   return (
     <>
-      <div className="w-72 items-center text-center overflow-auto overscroll-none">
+      <div className="w-72 items-center text-center overflow-y-auto overflow-scroll-hidden">
         <Autocomplete
           className="w-64 text-center  border rounded-lg"
           defaultItems={categoryData}

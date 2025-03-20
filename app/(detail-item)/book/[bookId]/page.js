@@ -31,12 +31,6 @@ export default async function ViewBookDetails({ params }) {
            </Link>
          </nav>
 
-         {/* <div className="flex gap-10 ">
-          <Link href={`/`}>Home</Link>
-          <Link href={`/book`}>Book</Link>
-         <Link href={`/${book.payload.book_title}`}>{book.payload.book_title }</Link>
-        </div> */}
-
          <div className=" mx-auto  rounded-3xl">
            <div className="py-5">
              <div className="bg-white rounded-t-3xl w-full mx-auto flex justify-between px-10 py-5">
