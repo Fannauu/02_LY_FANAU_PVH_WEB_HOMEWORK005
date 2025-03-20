@@ -38,7 +38,7 @@ const CartoonPage = async ({ searchParams }) => {
       {!genre || genre === undefined ? (
         renderCartoonGrid(cartData.payload)
       ) : (
-        <div className="grid grid-cols-2 gap-10 mt-10 py-10">
+        <div className="grid grid-cols-2 gap-10 mt-10 py-10 ">
           {cartoonsByGenre?.payload.map((cart) => (
             <CartToonData key={cart?.id} cart={cart} />
           ))}
@@ -49,39 +49,3 @@ const CartoonPage = async ({ searchParams }) => {
 };
 
 export default CartoonPage;
-
-// console.log(searchParams.search);
-
-// console.log("data of cartoon : ", cartData);
-
-// const AllCartoonName = cartData.payload.map((item) => item.ct_title);
-// console.log("all category name", cartData);
-
-// console.log("searchParams", await searchParams);
-
-// const title = searchParams.search;
-
-// return (
-//   <>
-//     <div className="bg-white w-full h-auto p-5 px-10 rounded-3xl">
-//       <div className="flex items-center justify-between  ">
-//         <button className="border rounded-2xl bg-gray-100 p-2 px-5 text-blue-300">
-
-//         </button>
-//         <div className="w-64 items-center text-center ">
-//           {/* <SelectCartoon {...AllCartoonName} /> */}
-//           <SelectCartoon cartoon = {cartData}/>
-//         </div>
-//       </div>
-//       <hr className=" mt-2 text-black" />
-//       <div className="items-center justify-start gap-20 mt-10 grid grid-cols-3 h-auto">
-//         {cartData.payload.map((cart, index) => (
-//           <CartToonData key={index} cart={cart} />
-//         ))}
-//       </div>
-//     </div>
-//   </>
-// );
-// };
-
-// export default CartoonPage;

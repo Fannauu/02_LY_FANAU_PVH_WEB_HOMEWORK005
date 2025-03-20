@@ -7,7 +7,7 @@ const AllBookCards = ({ book }) => {
 
   return (
     <>
-      <div className="w-[600px] h-[310px] relative">
+      <div className="w-[600px] h-[310px] relative mb-8">
         <div className="w-auto h-auto flex flex-col gap-5 absolute bottom-6 z-10 pl-8 ">
           <img
             className="w-[176px] h-[221px] rounded-2xl shadow-lg "
@@ -19,15 +19,15 @@ const AllBookCards = ({ book }) => {
             </Link>
           </div>
         </div>
-        <div className=" w-[527px] h-[225px] rounded-2xl  absolute inset-x-0 bottom-0   flex justify-end pr-2">
-          <div className="w-[55%] h-full rounded-2xl">
-            <p className="font-bold text-text-100 text-2xl line-clamp-1 pt-1">
+        <div className=" w-[480px] h-[225px] rounded-2xl absolute inset-x-0 bottom-0 bg-gray-100  flex justify-end px-2">
+          <div className="w-[55%] h-full rounded-2xl ">
+            <p className="font-semibold text-text-80 text-2xl line-clamp-1 pt-3">
               {book.book_title}
             </p>
-            <p className="line-clamp-6 mt-4 text-gray-600">
-              {book.description.length > 100
-              ? `${book.description.substring(0, 100)}...`
-              : book.description}
+            <p className="line-clamp-3 mt-4 text-gray-600">
+              {book.description.length > 200
+                ? `${book.description.substring(0, 200)}...`
+                : book.description}
             </p>
           </div>
         </div>

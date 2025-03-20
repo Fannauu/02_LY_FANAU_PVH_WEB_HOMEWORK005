@@ -19,15 +19,13 @@ export default function SideBar() {
                 className="w-20 h-20 rounded-full object-cover"
               />
             </div>
-            <p className="text-sm text-gray-500 mt-2">Black Monster</p>
-            <h2 className="text-lg font-semibold mt-1">
-              blackmonster@gmail.com
-            </h2>
+            <p className="text-2xl  text-gray-500 mt-2">Black Monster</p>
+            <h2 className="text-lg text-deep-teal text-gray-400">blackmonster@gmail.com</h2>
           </div>
           {/* Menu Section */}
           <nav className="space-y-1  flex flex-col mt-4 ">
-            {iconsData.map((option,index) => (
-             <NavBarLink key={index} option={option}/>
+            {iconsData.map((option, index) => (
+              <NavBarLink key={index} option={option} />
             ))}
 
             {/* <Link href={option.path}>
