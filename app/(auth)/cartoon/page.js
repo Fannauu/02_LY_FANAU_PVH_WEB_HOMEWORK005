@@ -33,13 +33,13 @@ const CartoonPage = async ({ searchParams }) => {
             <button className="border rounded-2xl bg-gray-100 p-2 px-5 text-blue-300">
               old-school-cartoon
             </button>
-            <div className="w-64 items-center text-center ">
+            <div className="w-64 items-center text-center">
               {/* <SelectCartoon {...AllCartoonName} /> */}
               <SelectCartoon genreOfCart={genreOfCart} />
             </div>
           </div>
-          <hr className=" mt-2 text-black" />
-          <div className="items-center justify-start gap-20 mt-10 grid grid-cols-3 h-auto">
+          <hr className=" mt-4 text-black" />
+          <div className="items-center justify-start gap-20 mt-10 grid grid-cols-3 h-auto py-10">
             {cartData.payload.map((cart, index) => (
               <CartToonData key={index} cart={cart} />
             ))}

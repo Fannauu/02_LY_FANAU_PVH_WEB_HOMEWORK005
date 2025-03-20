@@ -7,7 +7,7 @@ const AllBookCards = ({ book }) => {
 
   return (
     <>
-      <div className="w-[600px] h-[310px] relative  ">
+      <div className="w-[600px] h-[310px] relative">
         <div className="w-auto h-auto flex flex-col gap-5 absolute bottom-6 z-10 pl-8 ">
           <img
             className="w-[176px] h-[221px] rounded-2xl shadow-lg "

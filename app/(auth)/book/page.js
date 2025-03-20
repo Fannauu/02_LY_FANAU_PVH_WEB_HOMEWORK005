@@ -26,7 +26,7 @@ const BookPage = async ({ searchParams }) => {
   if (catId == undefined || !catId) {
     return (
       <>
-        <div className="bg-white w-full h-auto p-5 px-10 rounded-3xl">
+        <div className="bg-white w-full h-auto p-5 px-10 rounded-3xl py-10">
           <div className="flex items-center justify-between">
             <button className="border rounded-2xl bg-gray-100 p-2 px-5 text-blue-300">
               Allbooks
@@ -36,10 +36,11 @@ const BookPage = async ({ searchParams }) => {
               <SelectList {...categories} /> 
             </div>
           </div>
-          <hr className=" mt-2 text-black" />
-          <div className="grid grid-cols-2 gap-10 ">
+          <hr className=" mt-4 text-black" />
+          <div className="grid grid-cols-2 gap-10 py-10">
             {bookList.payload.map((book) => (
-              <AllBookCards key={book.id} book={book} />
+              <AllBookCards
+                key={book.id} book={book} />
             ))}
             {/* {searchParams.categoryId
             ? bookBycate.payload.map((cate) => (

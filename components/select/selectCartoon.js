@@ -42,14 +42,18 @@ export default function SelectCartoon({ genreOfCart }) {
 
   return (
     <>
-      <div className="w-64 items-center text-center ">
+      <div className="w-72 items-center text-center overflow-auto overscroll-none">
         <Autocomplete
-          className="max-w-xs"
+          className="w-64 text-center  border rounded-lg"
+          placeholder="Filter By Category"
           onSelectionChange={(value) => {
             router.replace(`/cartoon?genre=${value}`);
           }}>
           {genreOfCart.payload.map((car) => (
-            <AutocompleteItem key={car.id} value={car.id}>
+            <AutocompleteItem
+              key={car.id}
+              value={car.id}
+              className="bg-gray-100 px-3 text-black">
               {car.cartoon_genre}
             </AutocompleteItem>
           ))}
